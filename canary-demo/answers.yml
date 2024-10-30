@@ -38,14 +38,14 @@ prometheus_metrics:
 
 # Rollback Test
 rollback_test:
-  previous_revision: #TODO: Enter the revision number before rollback
-  rollback_command_used: #TODO: Enter the helm rollback command you used
-  time_to_rollback_seconds: #TODO: Enter how long the rollback took to complete
+  previous_revision: hiso1
+  rollback_command_used: helm rollback canary-demo 1 -n canary-demo
+  time_to_rollback_seconds:
 
 # Error Budget Calculation (based on 99.9% SLO)
 error_budget:
-  monthly_error_budget_seconds: #TODO: Calculate and enter the monthly error budget in seconds
-  remaining_error_budget_percentage: #TODO: Enter current remaining error budget percentage
+  monthly_error_budget_seconds: 2592.00
+  remaining_error_budget_percentage: 100.00
 
 # Additional Observations
 observations:
